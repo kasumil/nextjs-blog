@@ -1,17 +1,9 @@
 "use client";
 
+import { LinkType } from "@/types/type";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-
-type LinkType = {
-  children: React.ReactNode;
-  href: string;
-  Tag?: keyof JSX.IntrinsicElements; // Optional, to support dynamic HTML tags
-  logo?: boolean;
-  textColor?: string;
-  props?: React.HTMLAttributes<HTMLElement>; // Props for HTML attributes
-};
 
 export const LinkTag: React.FC<LinkType> = ({
   children,
