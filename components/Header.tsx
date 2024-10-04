@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkTag } from "../link";
+import { LinkTag } from "./link";
 
 export default function Header() {
   return (
